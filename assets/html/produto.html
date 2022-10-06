@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/home/styles.css">
+    <link rel="stylesheet" href="../styles/produto/produto-cabecalho-descripcao.css">
+    <link rel="stylesheet" href="../styles/produto/produto-main.css">
+    <link rel="stylesheet" href="../styles/produto/produto-info_formulario.css">
+    <link rel="stylesheet" href="../styles/produto/produto-footer.css">
+    <title>Alura Geek - Produto</title>
+</head>
+<body>
+    <header class="cabecalho">
+
+        <div class="cabecalho_container">
+            <a href="../../index.html"><img class="alura_logo" src="../img/header_banner/alura_geek_logo.png" alt="Home"></a>
+            <div class="buscador">
+                <input type="text" placeholder="O que você deseja encontrar?">
+                <button id="botao_buscar"><img id="imagem_vector" src="../img/header_banner/vector.png" alt="Buscador"></button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div id="imagem_produto"></div> 
+            <div class="info-produto">
+                <h2 class="produto-titulo">Produto XYZ</h2>
+                <p class="produto-preco">R$ 6o,oo</p>
+                <p class="produto-descricao">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="conteudo-principal">
+
+        <h3 class="conteudo-principal-titulo">Produtos similares</h3>
+
+        <section>
+            <div class="conteudo-principal-produtos">
+                
+                <article class="produtos">
+                    <img class="produto_imagen" src="../img/consoles/consoles_01.png" alt="">
+                    <h3 class="produto_titulo">Controle XYZ</h3>
+                    <p class="produto_preco">R$ 60,oo</p>
+                    <a class="produto-link" href="../html/produto.html"><p class="ver_produto">Ver produto</p></a>
+                </article>
+                
+                <article class="produtos">
+                    <img class="produto_imagen" src="../img/star_wars/star_war_02.png" alt="">
+                    <h3 class="produto_titulo">Produto XYZ</h3>
+                    <p class="produto_preco">R$ 60,oo</p>
+                    <a class="produto-link" href="../html/produto.html"><p class="ver_produto">Ver produto</p></a>
+               </article>
+                
+                <article class="produtos">
+                    <img class="produto_imagen" src="../img/star_wars/star_war_03.png" alt="">
+                    <h3 class="produto_titulo">Produto XYZ</h3>
+                    <p class="produto_preco">R$ 60,oo</p>
+                    <a class="produto-link" href="../html/produto.html"><p class="ver_produto">Ver produto</p></a>
+                </article>
+                
+                <article class="produtos">
+                    <img class="produto_imagen" src="../img/star_wars/star_war_04.png" alt="">
+                    <h3 class="produto_titulo">Produto XYZ</h3>
+                    <p class="produto_preco">R$ 60,oo</p>
+                    <a class="produto-link" href="../html/produto.html"><p class="ver_produto">Ver produto</p></a>
+                </article>
+
+                <article class="produtos produtos_extras">
+                    <img class="produto_imagen" src="../img/star_wars/star_war_05.png" alt="">
+                    <h3 class="produto_titulo">Produto XYZ</h3>
+                    <p class="produto_preco">R$ 60,oo</p>
+                    <a class="produto-link" href="../html/produto.html"><p class="ver_produto">Ver produto</p></a>
+                </article>
+                
+                <article class="produtos produtos_extras">
+                    <img class="produto_imagen" src="../img/star_wars/star_war_06.png" alt="">
+                    <h3 class="produto_titulo">Produto XYZ</h3>
+                    <p class="produto_preco">R$ 60,oo</p>
+                    <a class="produto-link" href="../html/produto.html"><p class="ver_produto">Ver produto</p></a>
+                </article>
+            
+            </div>
+        </section>
+
+        <section class="info_formulario">
+
+                <div class="info_container">
+                    
+                    <div class="info_empresa"> 
+        
+                        <div class="empresa_imagem">
+                            <a href="../../index.html"><img src="../img/header_banner/alura_geek_logo.png" alt=""></a>
+                        </div>
+        
+                        <ul class="lista_empresa">
+                            <li><a>Quem somos nós</a></li>
+                            <li><a>Política de privacidade</a></li>
+                            <li><a>Programa de fidelidade</a></li>
+                            <li><a>Nossas Lojas</a></li>
+                            <li><a>Quero ser franqueado</a></li>
+                            <li><a>Anuncie aqui</a></li>
+                        </ul>
+        
+                    </div>
+        
+                    <form class="form">
+        
+                        <p><strong>Fale conosco</strong></p>
+        
+                        <div class="form_group_input">
+                            <input type="text" id="name" name="name" onkeyup="validationName()" autocomplete="off" required>
+                            <label class="name">Nome</label>
+                            <span class="alert" id="msg_name"></span>
+                        </div>
+        
+                        <div class="form_group_textarea">
+                            <textarea rows="7" id="textarea" onkeyup="validationTextarea()" autocomplete="off" required></textarea>
+                            <label class="textarea">Escreva sua mensagem</label>
+                            <span class="alert" id="msg_textarea"></span>
+                        </div>
+        
+                        <button type="button" onclick="verification()">Enviar mensagem</button>
+        
+                    </form>
+        
+                </div>
+        
+        </section>
+        
+    </main>
+
+    <footer class="pie-de-pagina">
+        <p>Desenvolvido por Wlad Kochmansky</p>
+        <p>2022</p>
+    </footer>
+
+    <script src="../js/formulario-contato.js"></script>
+
+</body>
+</html>

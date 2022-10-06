@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/home/styles.css">
+    <link rel="stylesheet" href="../styles/adicionar-produto/adicionar-cabecalho.css">
+    <link rel="stylesheet" href="../styles/adicionar-produto/adicionar-main.css">
+    <link rel="stylesheet" href="../styles/adicionar-produto/adicionar-info_formulario.css">
+    <link rel="stylesheet" href="../styles/adicionar-produto/adicionar-footer.css">
+    
+    <title>Alura Geek - Adiciona Produto</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+    
+            <a href="../../index.html"><img id="alura_logo" src="../img/header_banner/alura_geek_logo.png" alt="Home"></a>
+            
+            <div class="buscador">
+                <input type="text" placeholder="O que você deseja encontrar?">
+                <button id="botao_buscar"><img id="imagem_vector_1" src="../img/header_banner/vector.png" alt="Buscador"></button>
+            </div>
+
+            <a href="../../index.html"><button id="botao_menu">Menu administrador</button></a>
+           
+            <button id="botao_externo"><img id="imagem_vector_2" src="../img/header_banner/vector.png" alt="Buscador"></button>
+
+        </div>
+    </header>
+
+    <main class="conteudo_principal">
+
+        <section>
+            <form class="adicionar-produto">
+    
+                <h2>Adicionar novo produto</h2>
+                <div class="adiciona_imagem">
+                    <!-- <input class="url_imagem" type="url" required> -->
+                    <label for="arquivo" class="label_imagem">Enviar Imagem</label>
+                    <input type="file" id="arquivo" name="arquivo" accept="image/jpeg, image/png" required>
+                    <div class="imagem-button">
+                        <img id="previsualizacao" src="" alt="">
+                        <button class="delete_imagem" type="button">x</button>
+                    </div>
+                    <!-- <p class="imagem-url">Ou</p> -->
+                </div>
+
+                <div class="form-inputs">
+                    <input class="inputs" id="url_imagem" type="text" onkeyup="verificando_URL()" autocomplete="off" required>
+                    <label for="url_imagem" class="label_inputs">URL da imagem</label>
+                    <p class="alert_login" id="msg_url_imagem"></p>
+    
+                    <input class="inputs" id="categoria" type="text" onkeyup="verificando_categoria()" autocomplete="off" required>
+                    <label for="categoria" class="label_inputs">Categoria</label>
+                    <p class="alert_login" id="msg_categoria"></p>
+    
+                    <input class="inputs" id="nome_produto" type="text" onkeyup="verificacao_produto_novo()" autocomplete="off" required>
+                    <label for="nome_produto" class="label_inputs">Nome do produto</label>
+                    <p class="alert_login" id="msg_produto_novo"></p>
+    
+                    <input class="inputs" id="preco_produto" type="text" onkeyup="" autocomplete="off" required>
+                    <label for="nome_produto" class="label_inputs">Preço do produto</label>
+                    <p class="alert_login" id="msg_preco_produto"></p>
+                </div>
+
+                <div class="form-textarea">
+                    <textarea id="textarea_produto" cols="30" rows="10" onkeyup="validacao_textarea()" autocomplete="off" rows="7" required></textarea>
+                    <label for="textarea_produto" class="label_textarea">Descrição do produto</label>
+                    <p class="alert_login" id="msg_descricao"></p>
+                </div>
+
+                <button class="button-verificador" type="button" onclick="verificacao_produto()">Adicionar produto</button>
+
+            </form>
+        </section>
+
+
+        <section class="info_formulario">
+            
+                <div class="info_container">
+                    
+                    <div class="info_empresa"> 
+        
+                        <div class="empresa_imagem">
+                            <a href="../../index.html"><img src="../img/header_banner/alura_geek_logo.png" alt=""></a>
+                        </div>
+        
+                        <ul class="lista_empresa">
+                            <li><a>Quem somos nós</a></li>
+                            <li><a>Política de privacidade</a></li>
+                            <li><a>Programa de fidelidade</a></li>
+                            <li><a>Nossas Lojas</a></li>
+                            <li><a>Quero ser franqueado</a></li>
+                            <li><a>Anuncie aqui</a></li>
+                        </ul>
+        
+                    </div>
+        
+                    <form class="form">
+        
+                        <p><strong>Fale conosco</strong></p>
+        
+                        <div class="form_group_input">
+                            <input type="text" id="name" onkeyup="validationName()" autocomplete="off" required>
+                            <label for="name" class="name">Nome</label>
+                            <span class="alert" id="msg_name"></span>
+                        </div>
+
+                        <div class="form_group_textarea">
+                            <textarea rows="7" id="textarea" onkeyup="validationTextarea()" autocomplete="off" required></textarea>
+                            <label for="textarea" class="textarea">Escreva sua mensagem</label>
+                            <span class="alert" id="msg_textarea"></span>
+                        </div>
+
+                        <button type="button" onclick="verification()">Enviar mensagem</button>
+                
+                    </form>
+        
+                </div>
+        
+        </section>
+        
+    </main>
+
+    <footer class="pie_de_pagina">
+        <p>Desenvolvido por Wlad Kochmansky</p>
+        <p>2022</p>
+    </footer>
+
+    <script src="../js/formulario-contato.js"></script>
+    <script src="../js/formulario-novo-produto.js"></script>
+
+</body>
+</html>

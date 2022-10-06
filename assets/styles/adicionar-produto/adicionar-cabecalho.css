@@ -1,0 +1,128 @@
+.cabecalho__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: #FFFFFF;
+}
+
+#alura_logo {
+    width: 100px;
+    height: 28px;
+}
+
+.buscador input {
+    display: none;
+
+    width: 230px;
+    height: 40px;
+    border: none;
+    color: #A2A2A2; 
+    background: #F5F5F5;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.buscador_logo {
+    width: 17.05px;
+    height: 17.06px;
+}
+
+#imagem_vector_1 {
+    display: none;
+}
+
+#imagem_vector_1:hover {
+    cursor: pointer;
+}
+
+#imagem_vector_2:hover {
+    cursor: pointer;
+}
+
+#botao_menu {
+    width: 166px;
+    height: 40px;
+    border: 1px solid #2A7AE4;
+    color:#2A7AE4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #FFFFFF;
+}
+
+#botao_menu:hover {
+    cursor: pointer;
+    background-color: #13415b;
+    color: #b0deda;
+    border: 1px solid #b0deda;
+}
+
+#botao_buscar {
+    border: none;
+    background: transparent;
+}
+
+#botao_externo {
+    border: none;
+    background: transparent;
+}
+
+@media (min-width: 768px) {
+    
+    .cabecalho__container {
+        padding: 16px 32px;
+    }
+    
+    .buscador {
+        display: flex;
+        width: 272px;
+        height: 40px;
+        background: #F5F5F5;
+        border-radius: 20px;
+        padding: 0 16px;
+    }
+
+    .buscador input {
+        display: block;
+    } 
+
+    #imagem_vector_1 {
+        display: block;
+    }
+
+    #imagem_vector_2 {
+        display: none;
+    }
+
+    #botao_menu:hover {
+        cursor: pointer;
+    }
+
+    #botao_externo {
+        display: none;
+    }
+}
+
+@media (min-width: 1115px) {
+
+    .cabecalho__container {
+        height: 115px;
+        padding: 0 152px;
+    }
+
+    #alura_logo {
+        width: 176px;
+        height: 50px;
+    }
+    
+    .buscador {
+        width: 393px;
+        justify-content: space-between;
+    }
+}

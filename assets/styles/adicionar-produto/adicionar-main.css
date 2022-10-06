@@ -1,0 +1,238 @@
+.conteudo_principal {
+    background: #f8f4f4;
+}
+
+.adicionar-produto {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;    
+}
+
+.adicionar-produto h2 {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 19px;
+}
+
+.adiciona_imagem {
+    text-align: center;
+} 
+
+.adiciona_imagem #arquivo {
+    display: none;
+}
+
+.label_imagem {
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #2A7AE4;
+    outline: none;
+    padding: 20px;
+    display: block;
+    color: #2A7AE4;
+    text-align: center;
+}
+
+.label_imagem:hover {
+    cursor: pointer;
+    background-color: #13415b;
+    color: #b0deda;
+    border: 1px solid #b0deda;
+}
+
+#previsualizacao {
+    width: 200px;
+    padding: 10px 10px 0;
+    border-radius: 20%;
+}
+
+.imagem-button {
+    display: flex;
+    justify-content: center;
+}
+
+.adiciona_imagem .delete_imagem {
+    color: #ec0808;
+    border: none;
+    padding: 0;
+    height: 0;
+    margin: 10px 0px 0px -5px;
+    display: none;
+}
+
+.imagem-url {
+    margin-top: 8px;
+    color: #2A7AE4;
+}
+
+.adiciona_imagem .delete_imagem:hover {
+    background: #ffffff;
+    color: #ec0808;
+    border: none;
+    cursor: pointer;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;    
+}
+
+.alert_login {
+    text-align: center;
+    margin-top: -13px;
+}
+
+.form-inputs .inputs {
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 3px 14px;
+    transition: all .3s ease-out;
+    color: #464646;
+}
+
+.form-inputs .inputs:focus{
+    border-bottom: 2px solid #13415b;
+}
+
+.label_inputs {
+    pointer-events: none;
+    transition: .5;
+    padding: 0 12px;
+    margin-top: -50px;
+    margin-bottom: 32px;
+    color: #A2A2A2;
+}
+
+.inputs:focus ~ .label_inputs,
+.inputs:valid ~ .label_inputs
+
+{
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #A2A2A2;
+    transition: .35s;
+}
+
+.form-textarea {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+}
+
+.form-textarea #textarea_produto {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    height: 82px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #464646;
+    resize: none;
+    padding-left: 12px;
+    padding-top: 20px;
+}
+
+.form-textarea #textarea_produto:focus{
+    border-bottom: 2px solid #13415b;
+}
+
+.form-textarea .label_textarea {
+    pointer-events: none;
+    transition: .5;
+    padding: 0 12px;
+    margin-top: -82px;
+    color: #A2A2A2;
+}
+
+#textarea_produto:focus ~ .label_textarea,
+#textarea_produto:valid ~ .label_textarea
+
+{
+    visibility: hidden;
+    font-size: 14px;
+    color: #A2A2A2;
+    transition: .35s;
+}
+
+#msg_descricao {
+    margin-top: 70px;
+}
+
+.adicionar-produto .button-verificador { 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    height: 51px;
+    border-radius: 4px;
+}
+
+.adicionar-produto .button-verificador:hover {
+    cursor: pointer;
+    background-color: #13415b;
+    color: #b0deda;
+    border: 1px solid #b0deda;
+}
+
+@media (min-width: 768px) {
+    
+    .adicionar-produto {
+        padding: 0 32px 16px;
+    }
+    
+    .adicionar-produto h2 {
+        margin-top: 32px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1115px) {
+        
+    .adicionar-produto {
+        padding: 32px 152px 45px;
+        align-items: center;
+    }
+    
+    .adicionar-produto h2 {
+        margin-top: 32px;
+        margin-right: 200px;
+        font-size: 32px;
+    }
+
+    .label_imagem {
+        width: 82vh;
+    }
+
+    .adicionar-produto input {
+        width: 536px;
+        height: 56px;
+    }
+
+    .adicionar-produto textarea {
+        width: 550px;
+        height: 56px;
+    }
+    
+    .adicionar-produto .button-verificador {  
+        width: 559px;
+        height: 56px;
+    }
+}

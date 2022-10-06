@@ -1,0 +1,258 @@
+.cabecalho {
+    width: 100%;
+    height: 72px;
+}
+
+.cabecalho .container {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.buscador input , .buscador #botao_buscar {
+    display: none;
+}
+
+.buscador input {
+    width: 133px;
+    height: 40px;
+    border: none;
+    color:#2A7AE4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#botao_login {
+    width: 133px;
+    height: 40px;
+    border: 1px solid #2A7AE4;
+    color:#2A7AE4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#botao_login:hover {
+    cursor: pointer;
+    background-color: #13415b;
+    color: #b0deda;
+    border: 1px solid #b0deda;
+}
+
+#imagem_alura {
+    height: 28px;
+}
+
+#imagem_vector_1 {
+    width: 17px;
+    height: 17px;
+    display: none;
+}
+
+#imagem_vector_2 {
+    width: 17px;
+    height: 17px;
+}
+
+#imagem_vector_1:hover {
+    cursor: pointer;
+}
+
+#imagem_vector_2:hover {
+    cursor: pointer;
+}
+
+/* Banner */
+.banner_info-botao {
+    margin-top: -115px;
+    padding: 0 16px;
+}
+
+.banner_image {
+    width: 100%;
+    height: 192px;
+}
+
+.banner_titulo {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.banner_desconto {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.banner_botao {
+    width: 122px;
+    height: 42px;
+    background: #2A7AE4;
+    border: #2A7AE4;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;   
+    color: #FFFFFF;
+}
+
+.banner_info-botao, .banner_titulo, .banner_desconto, .banner_botao {
+    margin-bottom: 8px;
+}
+
+.banner_botao:hover {
+    cursor: pointer;
+    background-color: #13415b;
+    color: #b0deda;
+    border: 1px solid #b0deda;
+}
+
+@media (min-width: 768px) {
+    .cabecalho .container {
+        padding: 16px 32px 16px 32px;
+    }
+
+    #imagem_alura {
+        height: 38px;
+    }
+
+    .buscador {
+        display: flex;
+        width: 272px;
+        height: 40px;
+        background: #F5F5F5;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+    
+    .buscador input {
+        width: 159px;
+        height: 16px;
+        font-weight: 400;
+        color: #A2A2A2; 
+        background: #F5F5F5;
+        outline: none;
+    }
+
+    .buscador button {
+        border: none;
+        background: transparent;
+    }
+
+    .buscador input , .buscador #botao_buscar {
+        display: block;
+    }
+    
+    #botao_login {
+        width: 166px;
+    }
+    
+    #imagem_vector_1 {
+        display: block;
+    }
+
+    #imagem_vector_2 {
+        display: none;
+    }
+    
+    /* Banner */
+    .banner_info-botao {
+        margin-top: -195px;
+        padding: 0 32px 32px;
+    }
+
+    .banner_image {
+        width: 100%;
+        height: 352px;
+    }
+
+    .banner_titulo {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 61px;
+    }
+
+    .banner_desconto {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .banner_info-botao, .banner_titulo, .banner_desconto, .banner_botao {
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 1065px) {
+
+    .cabecalho {
+        height: 115px;
+    }
+    
+    .cabecalho .container {
+        padding: 27.5px 152px 37.5px 152px;
+    }
+
+    #imagem_alura {
+        height: 58px;
+    }
+
+    .buscador {
+        width: 393px;
+        height: 40px;
+    }
+    
+    .buscador input {
+        width: 329px;
+        height: 16px;
+    }
+
+    .buscador input , .buscador #botao_buscar {
+        display: block;
+    }
+    
+    #botao_login {
+        width: 166px;
+    }
+    
+    #imagem_vector_1 {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    #imagem_vector_2 {
+        display: none;
+    }
+    
+    /* Banner */
+    .banner_info-botao {
+        margin-top: -205px;
+        padding: 0 152px 32px;
+    }
+
+    .banner_botao {
+        width: 130px;
+        height: 51px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .banner_info-botao, .banner_titulo, .banner_desconto, .banner_botao {
+        margin-bottom: 16px;
+    }
+}
