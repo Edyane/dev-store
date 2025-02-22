@@ -11,6 +11,7 @@
 ## 🚀 Tecnologias Utilizadas
 
 - **Next.js** (App Router, Server Components, Client ComponentsCache &Memoization)
+- **TypeScript**
 - **TailwindCSS**
 - **Cypress** 
 
@@ -27,7 +28,7 @@ A distinção entre **Server Components** e **Client Components**, e como otimiz
 ### Cache e Memoization
 Técnicas de **Cache** e **Memoization** para melhorar o desempenho da aplicação, garantindo que os dados sejam processados e renderizados de maneira eficiente, sem redundância.
 
-### 🧪 Testes E2E com Cypress
+### Testes E2E com Cypress
 Implementação de testes **end-to-end** (E2E) utilizando o **Cypress**, garantindo que a experiência do usuário na loja seja robusta e livre de erros.
 
 
