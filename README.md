@@ -2,6 +2,12 @@
 
 **Dev-Store** é um pequeno ecommerce construído durante o curso "Next.js App Router e Testes" da Rocketseat. Neste projeto, exploramos conceitos avançados do Next.js utilizando o App Router, além de implementar testes end-to-end (E2E) com Cypress. O objetivo principal do curso foi proporcionar uma compreensão profunda sobre a arquitetura moderna de aplicações web utilizando Next.js, abordando desde os fundamentos até técnicas avançadas.
 
+<div align="center">
+
+  ![preview img](/dev-store.png)
+
+</div>
+
 ## 🚀 Tecnologias Utilizadas
 
 - **Next.js** (App Router, Server Components, Client ComponentsCache &Memoization)
