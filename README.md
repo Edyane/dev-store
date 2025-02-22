@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  ![preview img](/dev-store.png)
+  ![preview img](/dev-store.PNG)
 
 </div>
 
