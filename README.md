@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dev-Store
 
-## Getting Started
+**Dev-Store** é um pequeno ecommerce construído durante o curso "Next.js App Router e Testes" da Rocketseat. Neste projeto, exploramos conceitos avançados do Next.js utilizando o App Router, além de implementar testes end-to-end (E2E) com Cypress. O objetivo principal do curso foi proporcionar uma compreensão profunda sobre a arquitetura moderna de aplicações web utilizando Next.js, abordando desde os fundamentos até técnicas avançadas.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js** (App Router, Server Components, Client ComponentsCache &Memoization)
+- **TailwindCSS**
+- **Cypress** 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📚 Conceitos Aprendidos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Durante o desenvolvimento da **Dev-Store**, exploramos uma série de conceitos fundamentais do Next.js, incluindo:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### App Router
+Como o **App Router** organiza o fluxo de navegação dentro da aplicação de forma eficiente e modular.
 
-## Learn More
+### Server Components e Client Components
+A distinção entre **Server Components** e **Client Components**, e como otimizar o desempenho ao decidir qual tipo de componente utilizar em diferentes partes da aplicação.
 
-To learn more about Next.js, take a look at the following resources:
+### Cache e Memoization
+Técnicas de **Cache** e **Memoization** para melhorar o desempenho da aplicação, garantindo que os dados sejam processados e renderizados de maneira eficiente, sem redundância.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🧪 Testes E2E com Cypress
+Implementação de testes **end-to-end** (E2E) utilizando o **Cypress**, garantindo que a experiência do usuário na loja seja robusta e livre de erros.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
