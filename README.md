@@ -10,7 +10,7 @@
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Next.js** (App Router, Server Components, Client ComponentsCache &Memoization)
+- **Next.js** (App Router, Server Components, Client Components, Cache &Memoization)
 - **TypeScript**
 - **TailwindCSS**
 - **Cypress** 
